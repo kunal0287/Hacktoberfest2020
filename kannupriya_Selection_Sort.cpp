@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h> 
 using namespace std; 
 
@@ -16,8 +15,8 @@ void selectionSort(int arr[], int n)
 	{ 
 		min_idx = i; 
 		for (j = i+1; j < n; j++) 
-		if (arr[j] < arr[min_idx]) 
-			min_idx = j; 
+			if (arr[j] < arr[min_idx]) 
+				min_idx = j; 
 		swap(&arr[min_idx], &arr[i]); 
 	} 
 } 
@@ -36,10 +35,9 @@ int main()
     cin >> n;
 	int arr[n];
 	for(int i = 0; i < n; i++)
-	cin >> arr[i];
+		cin >> arr[i];
     selectionSort(arr, n); 
-	cout << "Sorted array: \n"; 
-	printArray(arr, n); 
+	cout << "Sorted array: \n"; << printArray(arr, n); 
 	return 0; 
 } 
 
